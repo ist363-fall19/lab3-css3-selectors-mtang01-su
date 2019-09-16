@@ -43,3 +43,54 @@ ul {
     margin: 0;
     list-style: none;
 }
+
+.main{
+    display: flex;
+    margin-top: 30px;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    flex-direction: row;
+}
+.posts .post {
+    background-color: #242628;
+    padding: 15px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, .15);
+    width: 380px;
+}
+.posts .post:hover{
+    background-color: #202020;
+}
+/* .posts .post:first-child,
+.posts .post:nth-child(6) {
+    width: 100%;
+    margin-right: 0;
+} */
+.posts .post:first-of-type,
+.posts .post:last-of-type{
+    width: 100%;
+    margin-right: 0;
+}
+.posts .post:nth-child(pdd) {
+    margin-right: 0;
+}
+
+.posts .post .post-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* .posts .post:first-child > .post-title */
+
+.posts .post:first-child .post-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
